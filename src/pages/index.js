@@ -5,9 +5,11 @@ import "../styles/Index.css"
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Footer />
+    <div class = "page-content">
+      <div class="content">
+        <Navbar />
+      </div>
+        <Footer />
     </div>
   );
 };
