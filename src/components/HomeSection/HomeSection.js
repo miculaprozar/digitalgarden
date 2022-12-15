@@ -2,7 +2,8 @@ import React from "react";
 import { 
     Container,
     HomeTitle,
-    LeafAndLine
+    LeafAndLine,
+    Description
 } from "./HomeSection.style";
 import leaf from "../../svg/S1 Leaf.svg";
 import line from "../../svg/Line 3.svg";
@@ -18,8 +19,13 @@ const HomeSection = () => {
             <HomeTitle>
                 <p class = "firstTitle">WELCOME <span>IN THE</span></p>
                 <p class = "thirdTitle">DIGITAL GARDEN</p>
+                <Description>
+                Right here, our mission is to help you cultivate performance and
+                <br></br>asure the growth of your desired digital product. 
+            </Description>
             </HomeTitle>
         </Container>
+
     )   
 }
 

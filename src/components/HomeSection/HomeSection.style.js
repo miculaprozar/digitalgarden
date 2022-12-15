@@ -50,6 +50,14 @@ export const LeafAndLine = styled.div`
     }
 `;
 
+export const Description = styled.div`
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 20px;
+`;
 
 
 
