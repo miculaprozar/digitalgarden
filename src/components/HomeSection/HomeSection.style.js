@@ -9,6 +9,12 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 8%;
+
+    .illustration{
+        width: 321px;
+        height: 332px;
+        margin-left: 170px;
+    }
 `;
 
 export const HomeTitle = styled.div`

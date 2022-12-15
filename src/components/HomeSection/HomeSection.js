@@ -7,7 +7,7 @@ import {
 } from "./HomeSection.style";
 import leaf from "../../svg/S1 Leaf.svg";
 import line from "../../svg/Line 3.svg";
-
+import illustration from "../../svg/Hero Section Illustration.svg"
 
 const HomeSection = () => {
     return (
@@ -24,6 +24,7 @@ const HomeSection = () => {
                 <br></br>asure the growth of your desired digital product. 
             </Description>
             </HomeTitle>
+            <img class = "illustration" src={illustration} alt="illustration"/>
         </Container>
 
     )   
