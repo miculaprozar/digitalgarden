@@ -65,5 +65,22 @@ export const Description = styled.div`
     margin-top: 20px;
 `;
 
+export const Button = styled.button`
+    float: left;
+    align-items: center;
+    background: rgba(23, 102, 83, 0.79);
+    color: #FFFFFF;
+    border-radius: 24px;
+    margin-top: 45px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px 30px;
+    border: 0;
+
+    .arrow{
+        margin-left: 20px;
+    }
+`;
 
 
