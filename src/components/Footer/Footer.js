@@ -8,6 +8,7 @@ import {
     Col,
     Row
 } from "./Footer.style";
+import { Container } from "../../styles/Global";
 import logo from "../../images/Logomark FWhite@1x.png";
 import icon1 from "../../svg/icons8-facebook.svg";
 import icon2 from "../../svg/icons8-instagram.svg";
@@ -15,7 +16,7 @@ import icon3 from "../../svg/icons8-linkedin-circled.svg";
 
 const Footer = () => {
     return (
-    <div>
+    <Container>
         <UpFooter>
             <Row>
                 <Col>
@@ -47,7 +48,7 @@ const Footer = () => {
         <Copyright>
             <CopyrightText>Copyright © 2020-2022 Digital Garden</CopyrightText>
         </Copyright>
-    </div>
+    </Container>
     )
 }
 
