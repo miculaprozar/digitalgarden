@@ -17,7 +17,7 @@ const Navbar = () => {
       <Container>
         <NavbarItems>
           <Logo href="">
-            <img src={logo} alt = "" width={200} height={27} />
+            <img src={logo} alt = "" width={200} height={29} />
           </Logo>
           <Hamburger onClick={() => setIsOpen(!isOpen)}>
             <span />
