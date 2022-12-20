@@ -5,18 +5,23 @@ export const UpFooter = styled.div`
 `;
 
 export const Row = styled.div`
-    margin-left:10%;
-    display: inline-flex;
-    gap : 40px;
-    @media (max-width:1100px) {
-        display:initial;
-        justify-content: center;
 
-    }
-`;
 
 export const Col = styled.ul`
     
+    display: inline-flex;
+    @media (max-width:1200px) {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+`;
+
+export const Col = styled.ul`
+    margin-bottom: auto;
+    padding: 0px 47px 11px;
+    @media (max-width:1200px) {
+        margin-left: 30px;
+    } 
 `;
 
 export const Heading = styled.h4`
