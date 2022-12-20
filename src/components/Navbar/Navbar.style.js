@@ -45,6 +45,8 @@ export const NavbarItems = styled.div`
 
 export const Logo = styled.div`
   padding: 22px 20px 22px 0px;
+  cursor: pointer;
+  
 `;
 
 export const Menu = styled.div`
@@ -64,14 +66,15 @@ export const Hamburger = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
+  margin-top: 8px;
   span {
     height: 2px;
     width: 25px;
     background: #0B0B0C;;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     border-radius: 5px;
   }
   @media (max-width: 770px) {
     display: flex;
-  }
-`;
+  } 
+`; 

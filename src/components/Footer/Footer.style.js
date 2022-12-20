@@ -5,6 +5,10 @@ export const UpFooter = styled.div`
 `;
 
 export const Row = styled.div`
+
+
+export const Col = styled.ul`
+    
     display: inline-flex;
     @media (max-width:1200px) {
         display: flex;
