@@ -7,7 +7,7 @@ const Services = () => {
 	return (
 		<Container>
 			<ContainerServices>
-				<Button>ABOUT US</Button>
+				<Button>SERVICES</Button>
 			</ContainerServices>
 		</Container>
 	);
