@@ -20,10 +20,64 @@ export const Text = styled.p`
 	font-size: 16px;
 	line-height: 22px;
 	color: #7b7b7b;
+	@media (max-width: 768px) {
+		padding-inline: 30px;
+		text-align: center;
+	}
+`;
+
+export const Circle = styled.div`
+	position: relative;
+
+	.service {
+		position: absolute;
+		top: 21%;
+		left: 23%;
+	}
+`;
+
+export const Card = styled.li`
+	padding: 30px 75px;
+	width: 249.51px;
+	height: 218px;
+	background: #ffffff;
+	border: 1px solid #f3f3f3;
+	box-shadow: 0px 0px 10px rgba(81, 227, 171, 0.3);
+	border-radius: 24px;
+
+	p {
+		text-align: center;
+		color: #484848;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+	}
+`;
+
+export const CardWrappper = styled.ul`
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 56px;
+	padding: 0;
+	@media (max-width: 991px) {
+		.rectangle {
+			display: none;
+		}
+		justify-content: center;
+		padding-inline: 40px;
+	}
 `;
 
 export const ContainerServices = styled.div`
+	.rectangle {
+		align-self: center;
+		position: absolute;
+		z-index: -1;
+	}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 20%;
 `;
