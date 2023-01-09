@@ -3,6 +3,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import HomeSection from "../components/HomeSection/HomeSection";
 import Services from "../components/ServicesSection/ServicesSection";
+import AboutUsSection from "../components/AboutUsSection/AboutUsSection";
 import "../styles/Index.css";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
 				<Navbar />
 				<HomeSection />
 				<Services />
+				<AboutUsSection />
 			</div>
 			<Footer />
 		</div>

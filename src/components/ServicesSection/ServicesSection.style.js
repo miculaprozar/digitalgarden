@@ -79,5 +79,5 @@ export const ContainerServices = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 20%;
+	padding-bottom: 144px;
 `;
