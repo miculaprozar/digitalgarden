@@ -14,6 +14,9 @@ export const Card = styled.div`
 		line-height: 19px;
 		padding-right: 55px;
 	}
+	@media (max-width: 1096px) {
+		margin-bottom: 40px;
+	}
 `;
 
 export const CardPill = styled.div`

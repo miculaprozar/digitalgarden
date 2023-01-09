@@ -15,4 +15,7 @@ export const Card = styled.div`
 		top: 37%;
 		left: 37%;
 	}
+	@media (max-width: 1096px) {
+		display: none;
+	}
 `;

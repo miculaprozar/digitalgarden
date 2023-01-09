@@ -8,9 +8,15 @@ import {
 	Description,
 	Title,
 	CardDetails,
+	AboutUsProcess,
+	RightContent,
+	LeftContent,
 } from "./AboutUsSection.style";
 import image_3 from "../../images/image 3.png";
 import leaf from "../../svg/Layezr 11 12.svg";
+import StepCard from "../../general components/StepCard";
+import PlantCard from "../../general components/PlantCard";
+import CircleContent from "../../svg/Group 47.svg";
 
 const AboutUsSection = () => {
 	return (
@@ -31,6 +37,56 @@ const AboutUsSection = () => {
 				</DescriptionCard>
 				<img class="rectangle" src={rectangle} alt="rectangle" />
 			</Card>
+			<AboutUsProcess>
+				<LeftContent>
+					<StepCard
+						number={1}
+						title="Environmental Study"
+						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut urna quis quam auctor  iaculis non quis enim. Morbi vehicula egestas ex tristique viverra. Donec ornare volutpat  tortor, eget aliquam leo mattis id."
+					/>
+					<PlantCard img={CircleContent}></PlantCard>
+				</LeftContent>
+				<RightContent>
+					<PlantCard img={CircleContent}></PlantCard>
+					<StepCard
+						number={2}
+						title="Cultivating the Plan"
+						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut urna quis quam auctor  iaculis non quis enim. Morbi vehicula egestas ex tristique viverra. Donec ornare volutpat  tortor, eget aliquam leo mattis id."
+					/>
+				</RightContent>
+				<LeftContent>
+					<StepCard
+						number={3}
+						title="Development Phase"
+						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut urna quis quam auctor  iaculis non quis enim. Morbi vehicula egestas ex tristique viverra. Donec ornare volutpat  tortor, eget aliquam leo mattis id."
+					/>
+					<PlantCard img={CircleContent}></PlantCard>
+				</LeftContent>
+				<RightContent>
+					<PlantCard img={CircleContent}></PlantCard>
+					<StepCard
+						number={4}
+						title="Cleaning the Bugs"
+						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut urna quis quam auctor  iaculis non quis enim. Morbi vehicula egestas ex tristique viverra. Donec ornare volutpat  tortor, eget aliquam leo mattis id."
+					/>
+				</RightContent>
+				<LeftContent>
+					<StepCard
+						number={5}
+						title="Product Deployment"
+						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut urna quis quam auctor  iaculis non quis enim. Morbi vehicula egestas ex tristique viverra. Donec ornare volutpat  tortor, eget aliquam leo mattis id."
+					/>
+					<PlantCard img={CircleContent}></PlantCard>
+				</LeftContent>
+				<RightContent>
+					<PlantCard img={CircleContent}></PlantCard>
+					<StepCard
+						number={6}
+						title="Further Assitance"
+						text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut urna quis quam auctor  iaculis non quis enim. Morbi vehicula egestas ex tristique viverra. Donec ornare volutpat  tortor, eget aliquam leo mattis id."
+					/>
+				</RightContent>
+			</AboutUsProcess>
 		</Container>
 	);
 };

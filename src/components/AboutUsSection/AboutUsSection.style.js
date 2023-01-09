@@ -74,3 +74,46 @@ export const Description = styled.div`
 	line-height: 44px;
 	color: #2d5337;
 `;
+
+export const AboutUsProcess = styled.div`
+	position: relative;
+	max-width: 1096px;
+	margin: 108px auto;
+	&:after {
+		content: "";
+		position: absolute;
+		background: #51e3ab;
+		width: 1646px;
+		height: 24px;
+		border-radius: 24px;
+		transform: rotate(90deg);
+		top: 48%;
+		bottom: 0;
+		left: -84%;
+		z-index: -1;
+		left: -25%;
+		@media (max-width: 1096px) {
+			left: -143%;
+		}
+	}
+	@media (max-width: 1096px) {
+		margin: 108px;
+		display: flex;
+		flex-direction: column;
+	}
+`;
+
+export const RightContent = styled.div`
+	float: right;
+	display: flex;
+	gap: 25px;
+	@media (max-width: 1096px) {
+		float: left;
+	}
+`;
+
+export const LeftContent = styled.div`
+	float: left;
+	display: flex;
+	gap: 25px;
+`;
