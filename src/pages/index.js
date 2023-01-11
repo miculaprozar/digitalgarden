@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import HomeSection from "../components/HomeSection/HomeSection";
 import Services from "../components/ServicesSection/ServicesSection";
 import AboutUsSection from "../components/AboutUsSection/AboutUsSection";
+import WorkSection from "../components/WorkSection/WorkSection";
 import "../styles/Index.css";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
 				<HomeSection />
 				<Services />
 				<AboutUsSection />
+				<WorkSection />
 			</div>
 			<Footer />
 		</div>
