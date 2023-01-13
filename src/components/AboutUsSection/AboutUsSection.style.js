@@ -26,6 +26,8 @@ export const DescriptionCard = styled.div`
 
 export const Card = styled.div`
 	.rectangle {
+		width: 100%;
+		max-width: 1920px;
 		position: absolute;
 		z-index: -1;
 		padding-top: 57px;

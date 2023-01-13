@@ -5,6 +5,8 @@ export const UpPart = styled.div`
 	flex-direction: column;
 	align-items: center;
 	img {
+		width: 100%;
+		max-width: 1920px;
 		margin-top: 48px;
 	}
 `;
