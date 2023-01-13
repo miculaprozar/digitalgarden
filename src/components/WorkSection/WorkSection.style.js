@@ -18,6 +18,7 @@ export const Work = styled.div`
 		width: 817.68px;
 		height: 401px;
 		margin: 0;
+		position: relative;
 	}
 
 	@media (max-width: 907px) {
@@ -42,12 +43,16 @@ export const LaptopLine = styled.div`
 	background: #303030;
 	box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
 	margin-bottom: 37px;
+	margin-top: 384px;
 	@media (max-width: 907px) {
 		width: 534px;
+		margin-top: 237px;
 	}
 	@media (max-width: 600px) {
 		width: 366px;
+		margin-top: 162px;
 	}
+	position: absolute;
 `;
 
 export const WorkTitle = styled.p`
@@ -57,6 +62,9 @@ export const WorkTitle = styled.p`
 	text-align: center;
 	color: #3ca459;
 	margin: 0;
+	@media (max-width: 700px) {
+		font-size: 50px;
+	}
 `;
 
 export const SubTitle = styled.p`
@@ -66,6 +74,9 @@ export const SubTitle = styled.p`
 	text-align: center;
 	color: #5e5e5e;
 	margin: 0;
+	@media (max-width: 700px) {
+		font-size: 20px;
+	}
 `;
 
 export const Tags = styled.div`
