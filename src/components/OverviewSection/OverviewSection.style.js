@@ -5,7 +5,7 @@ export const Overview = styled.div`
 	align-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	@media (max-width: 500px) {
+	@media (max-width: 583px) {
 		padding: 20px;
 	}
 `;
@@ -31,9 +31,8 @@ export const Tag = styled.div`
 	gap: 30px;
 `;
 
-export const Description = styled.div`
+export const Content = styled.div`
 	img {
-		box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.25);
 		border-radius: 12px;
 		background: rgba(255, 255, 255, 0.0001);
 		border-radius: 22px;
@@ -43,6 +42,7 @@ export const Description = styled.div`
 
 export const Subtitles = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	gap: 56px;
 `;
 
@@ -68,6 +68,10 @@ export const Screen = styled.div`
 	border-radius: 41px;
 	float: right;
 	padding: 18px 20px;
+	margin-top: -36px;
+	@media (max-width: 768px) {
+		display: none;
+	}
 `;
 
 export const Speaker = styled.div`
@@ -76,4 +80,22 @@ export const Speaker = styled.div`
 	background: #e5f9e4;
 	border-radius: 9px;
 	margin: 0 69px 17px;
+`;
+
+export const DescriptionTitle = styled.div`
+	display: flex;
+	margin-top: 48px;
+	gap: 11px;
+	p {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 27px;
+		color: #000000;
+	}
+`;
+
+export const Description = styled.div`
+	display: flex;
+	flex-direction: column;
+	max-width: 442px;
 `;

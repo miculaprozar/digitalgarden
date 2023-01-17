@@ -11,9 +11,12 @@ import {
 	Screen,
 	InsideScreen,
 	Speaker,
+	Content,
+	DescriptionTitle,
 } from "./OverviewSection.style";
 import rectangle from "../../svg/Rectangle 82.svg";
 import screen from "../../images/MA screen image.png";
+import logo from "../../svg/image 18.svg";
 
 const OverviewSection = () => {
 	return (
@@ -25,7 +28,7 @@ const OverviewSection = () => {
 					<Text>OVERVIEW</Text>
 				</Tag>
 				<Line />
-				<Description>
+				<Content>
 					<Subtitles>
 						<SubtitlesGroup>
 							<p>Place</p>
@@ -46,7 +49,24 @@ const OverviewSection = () => {
 							<img src={screen} alt="screen" />
 						</InsideScreen>
 					</Screen>
-				</Description>
+					<Description>
+						<DescriptionTitle>
+							<img src={logo} alt="logo" />
+							<h1>Micul Aprozar</h1>
+						</DescriptionTitle>
+						<p>
+							Este ipsum dolor sit amet, consectetur adipiscing elit. Sed a
+							elementum turpis. Suspendisse commodo consectetur felis, et
+							condimentum urna sagittis a. Fusce non odio non sem venenatis
+							cursus. Praesent a mollis justo. Praesent et egestas libero.
+							Pellentesque pulvinar porta dui ac euismod. Curabitur imperdiet
+							erat ipsum, at egestas tellus tincidunt sit amet. Donec
+							scelerisque arcu dapibus erat rhoncus, ut dignissim massa
+							condimentum. Suspendisse velit sem, dictum non orci quis, placerat
+							venenatis magna.
+						</p>
+					</Description>
+				</Content>
 			</Overview>
 		</Container>
 	);
