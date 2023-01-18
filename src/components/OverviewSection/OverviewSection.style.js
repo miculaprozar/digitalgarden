@@ -84,7 +84,7 @@ export const Speaker = styled.div`
 
 export const DescriptionTitle = styled.div`
 	margin-top: 48px;
-	width: 383px;
+	width: 205px;
 `;
 
 export const Description = styled.div`
