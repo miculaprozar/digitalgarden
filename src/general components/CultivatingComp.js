@@ -9,16 +9,17 @@ import elipse from "../../src/svg/Ellipse 11.svg";
 
 const StepsComponent = (props) => {
 	const isReverted = props.number % 2 === 1;
+	const { number, title, text, img } = props;
 	return (
 		<Content isReverted={isReverted}>
 			<Text>
-				<Pill>{props.number}</Pill>
-				<h1>{props.title}</h1>
-				<p>{props.text}</p>
+				<Pill>{number}</Pill>
+				<h1>{title}</h1>
+				<p>{text}</p>
 			</Text>
 			<Card>
 				<img class="elipse" src={elipse} alt="elipse" />
-				<img class="content" src={props.img} alt="content" />
+				<img class="content" src={img} alt="content" />
 			</Card>
 		</Content>
 	);
