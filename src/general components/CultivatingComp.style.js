@@ -1,9 +1,13 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Content = styled.div`
-	margin-top: 72px;
-	gap: 170px;
-	display: flex;
+	${({ isReverted }) => css`
+		margin-top: 72px;
+		gap: 170px;
+		display: flex;
+		flex-direction: ${isReverted ? "row;" : "row-reverse;"};
+		flex-wrap: wrap;
+	`}
 `;
 export const Text = styled.div`
 	width: 322px;
@@ -49,5 +53,8 @@ export const Card = styled.div`
 		left: 30%;
 		width: 176px;
 		height: 144px;
+	}
+	@media (max-width: 991px) {
+		display: none;
 	}
 `;
