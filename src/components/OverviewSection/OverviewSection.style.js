@@ -83,19 +83,18 @@ export const Speaker = styled.div`
 `;
 
 export const DescriptionTitle = styled.div`
-	display: flex;
 	margin-top: 48px;
-	gap: 11px;
-	p {
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 27px;
-		color: #000000;
-	}
+	width: 205px;
 `;
 
 export const Description = styled.div`
 	display: flex;
 	flex-direction: column;
 	max-width: 442px;
+	p {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		color: #000000;
+	}
 `;

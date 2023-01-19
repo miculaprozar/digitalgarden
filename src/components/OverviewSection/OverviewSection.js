@@ -16,7 +16,6 @@ import {
 } from "./OverviewSection.style";
 import rectangle from "../../svg/Rectangle 82.svg";
 import screen from "../../images/MA screen image.png";
-import logo from "../../svg/image 18.svg";
 
 const OverviewSection = () => {
 	return (
@@ -51,8 +50,10 @@ const OverviewSection = () => {
 					</Screen>
 					<Description>
 						<DescriptionTitle>
-							<img src={logo} alt="logo" />
-							<h1>Micul Aprozar</h1>
+							<img
+								src="https://storage.googleapis.com/miculaprozar_images/logo_micul_aprozar.svg"
+								alt="logo"
+							/>
 						</DescriptionTitle>
 						<p>
 							Este ipsum dolor sit amet, consectetur adipiscing elit. Sed a
