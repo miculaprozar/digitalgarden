@@ -4,12 +4,14 @@ export const MenuLink = styled.a`
 	font-size: 12px;
 	line-height: 16.37px;
 	font-weight: 700;
-	font-size: 12px;
-	line-height: 16px;
 	color: #0b0b0c;
 	text-decoration: none;
 	margin: 10px;
 	position: relative;
+
+	@media (max-width: 770px) {
+		font-size: 20px;
+	}
 
 	&:after {
 		content: "";
@@ -41,6 +43,7 @@ export const NavbarItems = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 `;
 
 export const Logo = styled.div`
@@ -52,11 +55,20 @@ export const Menu = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	@media (max-width: 770px) {
-		overflow: hidden;
+		display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
 		flex-direction: column;
-		max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
-		transition: max-height 0.3s ease-in;
+		position: absolute;
 		width: 100%;
+		height: 100%;
+		text-align: center;
+		top: 0%;
+		left: -63px;
+		right: -63px;
+		margin: 0 auto;
+		background: #ffffff;
+		padding: 115px 20px;
+		position: fixed;
+		z-index: 1;
 	}
 `;
 
@@ -72,10 +84,11 @@ export const Hamburger = styled.div`
 		background: #0b0b0c;
 		margin-bottom: 3px;
 		border-radius: 5px;
+		z-index: 2;
 	}
 	@media (max-width: 770px) {
 		position: absolute;
 		display: flex;
-		left: 82%;
+		left: 92%;
 	}
 `;
