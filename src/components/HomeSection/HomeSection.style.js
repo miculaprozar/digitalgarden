@@ -21,6 +21,9 @@ export const ContainerHome = styled.div`
 			display: none;
 		}
 	}
+	@media (max-width: 502px) {
+		padding-inline: calc(50px - 4%);
+	}
 `;
 
 export const HomeTitle = styled.div`
@@ -46,8 +49,18 @@ export const HomeTitle = styled.div`
 		font-weight: 800;
 		color: #2ea15c;
 	}
+	@media (max-width: 543px) {
+		font-size: 47px;
+	}
+
 	@media (max-width: 502px) {
-		margin: 0 15%;
+		font-size: 29px;
+		line-height: 51.66px;
+	}
+	Button {
+		@media (max-width: 316px) {
+			display: none;
+		}
 	}
 `;
 
@@ -61,10 +74,9 @@ export const LeafAndLine = styled.div`
 
 	.line {
 		height: 113px;
-	}
-
-	@media (max-width: 570px) {
-		display: none;
+		@media (max-width: 502px) {
+			height: 73px;
+		}
 	}
 `;
 
@@ -80,6 +92,12 @@ export const Description = styled.div`
 		br {
 			display: none;
 		}
+	}
+	@media (max-width: 543px) {
+		font-size: 14px;
+	}
+	@media (max-width: 502px) {
+		font-size: 14px;
 	}
 `;
 
@@ -103,5 +121,9 @@ export const Button = styled.button`
 
 	@media (max-width: 502px) {
 		float: initial;
+	}
+
+	@media (max-width: 543px) {
+		font-size: 15px;
 	}
 `;
