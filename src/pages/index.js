@@ -7,6 +7,7 @@ import AboutUsSection from "../components/AboutUsSection/AboutUsSection";
 import WorkSection from "../components/WorkSection/WorkSection";
 import OverviewSection from "../components/OverviewSection/OverviewSection";
 import CultivatingProjectSection from "../components/CultivatingProjectSection/CultivatingProjectSection";
+import ContactUsSection from "../components/ContactUsSection/ContactUsSection";
 import "../styles/Index.css";
 const App = () => {
 	return (
@@ -19,6 +20,7 @@ const App = () => {
 				<WorkSection />
 				<OverviewSection />
 				<CultivatingProjectSection />
+				<ContactUsSection />
 			</div>
 			<Footer />
 		</div>
