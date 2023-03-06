@@ -32,19 +32,8 @@ const ContactUsSection = () => {
 		selectedButtonRef.current.value = button;
 	};
 
-	// const toBase64 = (file) =>
-	// 	new Promise((resolve, reject) => {
-	// 		const reader = new FileReader();
-	// 		reader.readAsDataURL(file);
-	// 		reader.onload = () => resolve(reader.result);
-	// 		reader.onerror = (error) => reject(error);
-	// 	});
-
 	const sendEmail = async (e) => {
 		e.preventDefault();
-		// const file = e.target.elements.my_file.files[0];
-		// const fileBase64 = await toBase64(file);
-
 		emailjs
 			.sendForm(
 				"service_zvbedu5",
