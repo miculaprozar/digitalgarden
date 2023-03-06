@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ContactUs = styled.div`
 	margin-top: 144px;
+	margin-bottom: 144px;
 	display: flex;
 	position: relative;
 	justify-content: center;
@@ -91,6 +92,11 @@ export const Buttons = styled.div`
 	gap: 19.54px;
 `;
 export const Button = styled.div`
+	${({ selected }) =>
+		selected &&
+		css`
+			background-color: #10c38d;
+		`}
 	width: 177.09px;
 	height: 54px;
 	border: 1px solid #61e5c5;
@@ -161,6 +167,8 @@ export const UploadText = styled.p`
 `;
 
 export const ContactUsButton = styled.button`
+	margin-top: 33px;
+	margin-bottom: 15px;
 	width: 234px;
 	height: 54px;
 	background: #10c38d;
