@@ -97,7 +97,6 @@ export const Button = styled.div`
 		css`
 			background-color: #10c38d;
 		`}
-
 	width: 177.09px;
 	height: 54px;
 	border: 1px solid #61e5c5;
@@ -186,8 +185,7 @@ export const ContactUsButton = styled.button`
 `;
 
 export const Upload = styled.div`
-	display: none;
-	//display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	margin-top: 48px;
 	img {
